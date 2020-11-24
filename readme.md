@@ -1,51 +1,23 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Laravel-Exam-Importir
+This repository used for Exam Purpose on Company ImportirORG
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# Story
+Sebagai seorang pengembang web aplikasi, kamu diminta seorang client yang bergerak dalam bidang meetup / gathering utk mengumpulkan data - data peserta yang menghadiri acara tersebut lewat portal halaman dimana pada halaman tersebut berisikan form untuk pengisian data, adapun data diri yang diperlukan client adalah (tanggal acara, jam acara, lokasi acara, email, nama lengkap, usia, profesi, nomor handphone)
 
-## About Laravel
+# Project Description :
+[Laravel 5.4 | Php 7.0.33]
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+# Setup Project Guidance
+Silahkan clone project dan artisan migrate, untuk menjalankan project di local anda Jalankan Seeding.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
-
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+# Follow Instruction
+1. Buatlah sebuah halaman form untuk mengumpulkan data peserta dengan UI UX yang menarik. Form digunakan hanya untuk penyimpanan data peserta (tidak ada action tambahan).
+2. Buatlah sebuah relasi antara table peserta dengan table acara dimana relasinya adalah 1 acara dapat memiliki banyak peserta dan 1 peserta dapat menjumpai banyak acara. (Mohon membuat sebuah migrasi table baru untuk mencegah relasi many to many)
+3. Berikan validasi validasi berikut untuk form diatas.Semua data wajib diisi kecuali data profesi (optional), pastikan user mengisi nomor handphone dengan angka tanpa simbol dan huruf didalamnya. Pastikan agar email yang diisi untuk masing - masing acara tidak dapat duplicate. Pastikan agar peserta yang mendaftar tidak boleh melebihi jumlah kapasitas peserta yang ada.
+4. Setiap validasi diberikan pesan error berupa session
+5. Buatlah sebuah halaman yang hanya dapat di akses oleh admin yang telah login untuk dapat melihat list acara dimana pada halaman tersebut admin dapat mencari acara berdasarkan tanggal acara, bulan acara, jumlah peserta.
+6. Disetiap list acara admin dapat meng-klik untuk melihat isi detail acara lewat tombol detail.
+7. Pada halaman detail acara berisi informasi acara, dan peserta acara yang hadir.
+8. Codingan yang dibentuk menggunakan return result status seperti video yang telah ditonton
+9. Codingan yang dibuat menggunakan model repository seperti video yang telah ditonton
+10. -- Silahkan memberikan fitur tambahan yang kiranya bisa membantu atau mengoptimalkan web aplikasi yang dibuat berdasarkan request client diatas sekreatif mungkin.
