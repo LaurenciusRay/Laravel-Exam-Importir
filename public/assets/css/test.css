@@ -1,0 +1,92 @@
+#navbar{
+    background-color:#7d8403;
+    padding: 1rem;
+}
+#nv{
+    color: white;
+    font-family: Viga;
+    font-size: 22px;
+}
+.nav-link:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ffffff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+.jumbotron {
+    background-size: 40px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+#marquee{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*  */
+.display-4{
+    margin-top: 3rem;
+    font-family: serif;
+    color: rgb(39, 39, 39);
+}
+/* Info Panel */
+.info-panel{
+    box-shadow: 0 3px 20px  rgba(0,0,0,0.5);
+    border-radius: 10rem;
+    margin-top: -100px;
+    background-color: #7d8403;
+    padding: 60px;
+    margin-bottom: 4rem;
+    color: white;
+}
+#h5{
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+#judull{
+    text-align: center;
+    font-family: cursive;
+}
+hr{
+    height: 1px;
+    background-color: black;
+    width: 10%;
+}
+#border{
+    background-color: #7d8403;
+    height: 500px;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+#content{
+    margin-top: 1rem;
+}
+
+
+.kotak img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+
+.zoom-effect:hover .kotak img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.10);
+}
+
+#btn-form{
+    border-radius: 4rem; 
+    width:100px; 
+    height:45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}

@@ -17,11 +17,16 @@ class CreateParticipantUsersTable extends Migration
             $table->increments('id');
             $table->string('full_name');
             $table->string('age');
-            $table->string('email');
-            $table->string('phone_number');
-            $table->string('profesion');
+            $table->string('email')->unique();
+            $table->bigInteger('phone_number');
+            $table->string('profesion')->nullable();
+            $table->integer('event_id')->unsigned()->nullable();
+            $table->integer('events_id')->unsigned()->nullable();
             $table->timestamps();
             $table->softDeletes();
+
+            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('events_id')->references('id')->on('events1s')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
