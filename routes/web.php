@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ParticipantUserController@create');
+Route::post('/', 'ParticipantUserController@store')->name('store');

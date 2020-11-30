@@ -15,6 +15,7 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
+            // $table->integer('participant_users_id')->unsigned();
             $table->string('event_name');
             $table->string('event_category');
             $table->string('event_location');
@@ -22,6 +23,8 @@ class CreateEventsTable extends Migration
             $table->text('event_description');
             $table->timestamps();
             $table->softDeletes();
+
+            // $table->foreign('participant_users_id')->references('id')->on('participant_users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

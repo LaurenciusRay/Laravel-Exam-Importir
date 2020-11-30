@@ -15,13 +15,16 @@ class CreateParticipantUsersTable extends Migration
     {
         Schema::create('participant_users', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('events_id')->unsigned();
             $table->string('full_name');
             $table->string('age');
             $table->string('email');
             $table->string('phone_number');
-            $table->string('profesion');
+            $table->string('profesion')->nullable();
             $table->timestamps();
             $table->softDeletes();
+
+            $table->foreign('events_id')->references('id')->on('events')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
