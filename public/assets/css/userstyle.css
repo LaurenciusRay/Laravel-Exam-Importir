@@ -1,0 +1,169 @@
+/* navbar */
+#logonavbar{
+    color: white;
+}
+.navbar{
+    background-color:  #002244;
+}
+#a-navbar, #navbarDropdown{
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+/* carousel */
+#img-crs{
+    height: 600px;
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    background-color: #002244;
+    min-height: 450px;
+}
+#ft{
+    padding-top: 40px;
+}
+#img-footer{
+    height: auto;
+    width: 100%;
+    border-radius: 30px;
+}
+#p-ft1{
+    text-align: justify;
+    color: white;
+}
+#p-ft2{
+    text-align: justify;
+    color: white;
+}
+#p-ft3{
+    font-size: 20px;
+    color: white;
+}
+
+/* header */
+#logonavbar{
+    border-radius: 30px;
+}
+
+/* content */
+
+/* ctn-home1 */
+#ctn-home1{
+    margin-top: 50px;
+}
+/* row-home1-1 */
+#row-home1-1{
+    align-items: center;
+    position: relative;
+    box-shadow: 0 3px 20px  rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 2rem;
+}
+#p-home1{
+    text-align: center;
+    color:#2A4365;
+    font-family: 'PT Sans', sans-serif;
+}
+#p-home2{
+    font-size: 25px;
+}
+#garis-home{
+    border-top: 5px #2A4365 solid;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* row-home1-2 */
+#img-home1{
+    height: auto;
+    width: 100%;
+    justify-items: center;
+}
+#row-home1-2{
+    margin-top: 50px;
+}
+#p-home3, #p-home5{
+    font-style: italic;
+}
+#p-home4, #p-home6{
+    text-align: justify;
+}
+#p-home7{
+    text-decoration: none;
+}
+#btn-home1{
+    background-color:#2A4365;
+    border-radius: 15px;
+}
+
+/* row-home1-3 */
+#row-home1-3{
+    margin-top: 50px;
+}
+#img-home2{
+    height: auto;
+    width: 100%;
+    justify-items: center;
+    border-radius: 20px;
+}
+#p-home9{
+    text-align: justify;
+}
+#p-home10{
+    text-align: end;
+}
+#garis-home1{
+    border-top: 3px #2A4365 solid;
+    border-radius: 5px;
+}
+
+
+/* ctn-home3 */
+#ctn-home3{
+    margin-top: 50px;
+}
+#p-home13{
+    text-align: center;
+    font-size: 50px;
+}
+#p-home14{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ctn-home5 */
+#ctn-home5{
+    margin-top: 50px;
+}
+#row-home5-2{
+    margin-top: 40px;
+}
+#fotoakhir1{
+    height: 100%;
+}
+
+/* FormPendaftaranEvent */
+.img-pendaftaranevent{
+    height: 400px;
+}
+#card-pendaftaranevent1{
+    margin-top: 50px;
+    background-color: #e2e8f0;
+}
+#p-pendaftaranevent1{
+    text-align: justify;
+}
+#p-pendaftaranevent3{
+    text-align: justify;
+    text-decoration: underline black;
+    font-weight: bolder;
+}
+#ctn-formevent{
+    margin-top: 50px;
+}

@@ -1,0 +1,21 @@
+/* Dashboard Admin */
+.cfd1-dashboard{
+    background-color: gold;
+    height: 300px;
+    text-align: center;
+}
+#p-dashboard1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+#p-dashboard2{
+    font-size: 35px;
+    font-weight: bold;
+}
+#p-dashboard3{
+    font-size: 50px;
+    font-weight: bolder;
+}
+#h2-create{
+    text-transform: uppercase;
+}
