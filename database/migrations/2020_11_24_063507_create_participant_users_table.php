@@ -15,6 +15,7 @@ class CreateParticipantUsersTable extends Migration
     {
         Schema::create('participant_users', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_event');
             $table->string('full_name');
             $table->string('age');
             $table->string('email');
