@@ -80,7 +80,7 @@
                                     @endforeach
                                 </select>
                                 @if ($listperson >= 2)
-                                    <span class="help-block text-warning">
+                                    <span class="help-block text-danger">
                                         <strong>Kuota event sudah penuh</strong>
                                     </span>
                                 @endif
@@ -100,7 +100,7 @@
                                     @endforeach
                                 </select>
                                 @if ($listpersons >= 2)
-                                <span class="help-block text-warning">
+                                <span class="help-block text-danger">
                                     <strong>Kuota event sudah penuh</strong>
                                 </span>
                                 @endif
