@@ -2,7 +2,7 @@
 @section('title', 'Dashboard Admin')
 
 @section('KreasiEvent.content.Admin')
-    
+<div data-aos="fade-up">
     <div class="content-header">
         <h1>
           Dashboard
@@ -26,7 +26,6 @@
           <div class="small-box bg-green">
             <div class="inner">
               <h3>{{ $event->count() }}</h3>
-
               <p>Event 1</p>
             </div>
             <div class="icon">
@@ -41,7 +40,6 @@
           <div class="small-box bg-yellow">
             <div class="inner">
               <h3>{{ $participant->count() }}</h3>
-
               <p>Peserta</p>
             </div>
             <div class="icon">
@@ -56,7 +54,6 @@
           <div class="small-box bg-red">
             <div class="inner">
               <h3>{{ $events->count() }}</h3>
-
               <p>Event 2</p>
             </div>
             <div class="icon">
@@ -68,5 +65,5 @@
         <!-- ./col -->
       </div>
     </div>
-    
+</div>    
 @endsection

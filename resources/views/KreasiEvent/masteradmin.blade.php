@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/adminstyle.css')}}">
     {{-- data table --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -94,5 +95,9 @@
         $('#table_id').DataTable();
         } );
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init(2000);
+     </script>
   </body>
 </html>

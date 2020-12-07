@@ -26,48 +26,58 @@
 
     {{-- content --}}
     <div class="container" id="ctn-home1">
+      <div data-aos="zoom-in">
         <div class="row-align-items" id="row-home1-1">
             <h1 id="p-home1">SELAMAT DATANG DI <br> KreasiEvent</h1>
             <p class="text-center" id="p-home2">Tempat terpercaya bagi anda <br> untuk Event yang lebih menarik dan tertata dengan baik</p>
             <hr id="garis-home">
         </div>
+      </div>
         <div class="row" id="row-home1-2">
             <div class="col-lg-6 col-md-6 col-sm-6">
-                    <h1 id="p-home3">VISI</h1>
-                    <hr id="garis-home1">
-                    <p id="p-home4">TERWUJUDNYA Perusahaan yang CERDAS, TERAMPIL, MANDIRI DAN BERWAWASAN GLOBAL</p>
-                    <h1 id="p-home5">MISI</h1>
-                    <hr id="garis-home1">
-                    <p id="p-home6">Kami bertujuan untuk memberikan pelayanan terbaik dari kami untuk kepuasan Client</p>
+              <div data-aos="zoom-in-right">
+                <h1 id="p-home3">VISI</h1>
+                <hr id="garis-home1">
+                <p id="p-home4">TERWUJUDNYA Perusahaan yang CERDAS, TERAMPIL, MANDIRI DAN BERWAWASAN GLOBAL</p>
+                <h1 id="p-home5">MISI</h1>
+                <hr id="garis-home1">
+                <p id="p-home6">Kami bertujuan untuk memberikan pelayanan terbaik dari kami untuk kepuasan Client</p>
+              </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
+              <div data-aos="zoom-in-left">
                 <img src="{{asset('assets/img/event5.png')}}" alt="" id="img-home1">
+              </div>
             </div>
         </div>
         <div class="row" id="row-home1-3">
             <div class="col-lg-6 col-md-6 col-sm-6">
+              <div data-aos="zoom-in-right">
                 <img src="{{asset('assets/img/ceo.jpg')}}" alt="" id="img-home2">
+              </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
-                    <h1 id="p-home8">SAMBUTAN CEO</h1>
-                    <p id="p-home9">
-                        Kami mengucapkan selamat datang di Website kami Kreasi Creator Event yang saya 
-                        tujukan untuk seluruh masyarakat guna dapat mengakses seluruh informasi 
-                        tentang segala profil, aktifitas/kegiatan serta dokumentasi Perusahaan kami. Kami selaku pimpinan sekolah mengucapkan 
-                        terima kasih kepada tim pembuat Website ini yang telah berusaha untuk dapat lebih memperkenalkan segala perihal 
-                        yang dimiliki oleh Perusahaan.
-                    </p>
-                    <p id="p-home10">Hormat Kami,<br>
-                        Dian Sastro
-                    </p>
+              <div data-aos="zoom-in-left">
+                <h1 id="p-home8">SAMBUTAN CEO</h1>
+                <p id="p-home9">
+                    Kami mengucapkan selamat datang di Website kami Kreasi Creator Event yang saya 
+                    tujukan untuk seluruh masyarakat guna dapat mengakses seluruh informasi 
+                    tentang segala profil, aktifitas/kegiatan serta dokumentasi Perusahaan kami. Kami selaku pimpinan sekolah mengucapkan 
+                    terima kasih kepada tim pembuat Website ini yang telah berusaha untuk dapat lebih memperkenalkan segala perihal 
+                    yang dimiliki oleh Perusahaan.
+                </p>
+                <p id="p-home10">Hormat Kami,<br>
+                    Dian Sastro
+                </p>
+              </div>
             </div>
         </div>
     </div>
 
     <div class="container-fluid" id="ctn-home3">
+      <div data-aos="fade-down">
         <h1 id="p-home13" class="text-center">Layanan Event Kami</h1>
         <p class="text-center" id="p-home14">Inilah Event yang tersedia di Kreasi Creator Event</p>
-        
         <div class="row" id="row-home3-2">
             <div class="col-lg-3 col-md-3 col-sm-3"></div>
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -111,9 +121,11 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3"></div>
         </div>
+      </div>
     </div>
 
     <div class="container" id="ctn-home5">
+      <div data-aos="fade-down">
         <div class="row" id="row-home5-1">
             <div class="card-deck">
                 <div class="card">
@@ -140,6 +152,7 @@
                 </div>
               </div>
         </div>
+      </div>
     </div>
 
 @endsection
