@@ -27,7 +27,7 @@ class ParticipantController extends Controller
         $data_event = Event::all();
         $data_events = Event_dua::all();
         $listperson = ParticipantUsers::where('event_id',1)->count();
-        $listpersons = ParticipantUsers::where('event_dua_id',1)->count();
+        $listpersons = ParticipantUsers::where('event_id',1)->count();
         return view('KreasiEvent.content.User.BladePendaftaran.create',compact('data_event','data_events','listperson','listpersons'));
     }
 

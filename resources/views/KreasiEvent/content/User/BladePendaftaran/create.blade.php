@@ -103,7 +103,7 @@
                                 <span class="help-block text-warning">
                                     <strong>Kuota event sudah penuh</strong>
                                 </span>
-                            @endif
+                                @endif
                             </div>
                         </div>
                         <br>

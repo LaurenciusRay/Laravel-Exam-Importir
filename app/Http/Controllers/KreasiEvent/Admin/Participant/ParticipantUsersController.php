@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Event;
 use App\Event_dua;
 use App\ParticipantUsers;
-use App\Http\Controllers\KreasiEvent\Admin\EventDua\EventDuaRepository;
+use App\Http\Controllers\KreasiEvent\Admin\Participant\ParticipantUsersRepository;
 
 class ParticipantUsersController extends Controller
 {
