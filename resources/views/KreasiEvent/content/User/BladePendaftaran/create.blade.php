@@ -22,8 +22,8 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-3"></div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="form-group row" id="form-biodatapegawai1">
-                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="posisi_lamaran_id">Nama</label>
+                        <div class="form-group row" id="form-biodatapeserta1">
+                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="full_name">Nama</label>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="form-group{{ $errors->has('full_name') ? ' has-error' : '' }}">
                                     <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Your Full Name">
@@ -31,8 +31,8 @@
                             </div>
                         </div>
                         <br>
-                        <div class="form-group row" id="form-biodatapegawai2">
-                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="nama_calon_pegawai">Umur</label>
+                        <div class="form-group row" id="form-biodatapeserta2">
+                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="age">Umur</label>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="form-group{{ $errors->has('age') ? ' has-error' : '' }}">
                                     <input type="text" class="form-control" id="age" name="age" placeholder="Age">
@@ -40,8 +40,8 @@
                             </div>
                         </div>
                         <br>
-                        <div class="form-group row" id="form-biodatapegawai3">
-                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="tanggal_lahir">Email</label>
+                        <div class="form-group row" id="form-biodatapeserta3">
+                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="email">Email</label>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
@@ -49,8 +49,8 @@
                             </div>
                         </div>
                         <br>
-                        <div class="form-group row" id="form-biodatapegawai4">
-                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="jenis_kelamin_id">Phone Number</label>
+                        <div class="form-group row" id="form-biodatapeserta4">
+                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="phone_number">Phone Number</label>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="form-group{{ $errors->has('phone_number') ? ' has-error' : '' }}">
                                     <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Your Phone Number">
@@ -58,12 +58,52 @@
                             </div>
                         </div>
                         <br>
-                        <div class="form-group row" id="form-biodatapegawai5">
-                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="img_pegawai">Profesion</label>
+                        <div class="form-group row" id="form-biodatapeserta5">
+                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="profession">Profesion</label>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="form-group{{ $errors->has('profesion') ? ' has-error' : '' }}">
                                     <input type="text" class="form-control" id="profesion" name="profesion" placeholder="Your profesion">
                                 </div>
+                            </div>
+                        </div>
+                        <div class="form-group row" id="form-biodatapeserta6">
+                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="event_id">Event 1</label>
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <select name="event_id" {{ $listperson >=2 ? 'disabled' : '' }} id="event_id" class="custom-select">
+                                    <option value="">
+                                        Choose Event
+                                    </option>
+                                    @foreach ($data_event as $item)
+                                        <option value="{{ $item->id }}">
+                                            {{ $item->event_name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                @if ($listperson >= 2)
+                                    <span class="help-block text-warning">
+                                        <strong>Kuota event sudah penuh</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row" id="form-biodatapeserta6">
+                            <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="event_dua_id">Event 2</label>
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <select name="event_dua_id" {{ $listpersons >=2 ? 'disabled' : '' }} id="event_dua_id" class="custom-select">
+                                    <option value="">
+                                        Choose Event
+                                    </option>
+                                    @foreach ($data_events as $items)
+                                        <option value="{{ $items->id }}">
+                                            {{ $items->event_names }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                @if ($listpersons >= 2)
+                                <span class="help-block text-warning">
+                                    <strong>Kuota event sudah penuh</strong>
+                                </span>
+                            @endif
                             </div>
                         </div>
                         <br>

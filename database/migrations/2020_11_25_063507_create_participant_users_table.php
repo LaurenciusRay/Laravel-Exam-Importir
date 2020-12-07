@@ -20,8 +20,13 @@ class CreateParticipantUsersTable extends Migration
             $table->string('email');
             $table->string('phone_number');
             $table->string('profesion');
+            $table->integer('event_id')->unsigned()->nullable();
+            $table->integer('event_dua_id')->unsigned()->nullable();
             $table->timestamps();
             $table->softDeletes();
+
+            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('event_dua_id')->references('id')->on('event_duas')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

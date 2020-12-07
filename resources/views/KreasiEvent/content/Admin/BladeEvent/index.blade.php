@@ -2,18 +2,7 @@
 @section('title', 'Admin | Table Event')
 
 @section('KreasiEvent.content.Admin')
-    <style>
-        h2,table{
-            text-align: center;
-        }
-        th{
-            text-align: center;
-        }
-        td{
-            align-content: 
-        }
-    </style>    
-    <div class="container mt-3" id="index-event">
+    <div class="container ctn-index" id="index-event">
         <div class="row">
             <div class="col-12">
                 <div class="py-4">
@@ -41,6 +30,7 @@
                           <th>Event Location</th>
                           <th>Event Date</th>
                           <th>Event Description</th>
+                          <th>Action</th>
                         </tr>               
                     </thead>
 

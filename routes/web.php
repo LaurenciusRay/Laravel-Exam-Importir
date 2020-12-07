@@ -17,8 +17,9 @@ Route::get('/', function () {
 Route::group(['middleware' => 'auth'], function(){
     Route::prefix('/admin')->group(function(){
         Route::get('/dashboard', 'KreasiEvent\Admin\DashboardController@index')->name('dashboard.admin');
-        Route::resource('/event', 'KreasiEvent\Admin\EventController');
-        Route::resource('/participant', 'KreasiEvent\Admin\ParticipantController');
+        Route::resource('/event', 'KreasiEvent\Admin\Event\EventController');
+        Route::resource('/eventdua', 'KreasiEvent\Admin\EventDua\EventDuaController');
+        Route::resource('/participant', 'KreasiEvent\Admin\Participant\ParticipantUsersController');
     });
 });
 

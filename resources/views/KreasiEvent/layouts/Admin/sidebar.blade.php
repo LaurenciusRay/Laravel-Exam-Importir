@@ -27,8 +27,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i>Admin 1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i>Admin 2</a></li>
+            <li class="active"><a href="{{route('dashboard.admin')}}"><i class="fa fa-circle-o"></i>Admin 1</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -51,6 +50,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('event.index')}}"><i class="fa fa-circle-o"></i>Tabel Event</a></li>
+            <li><a href="{{route('eventdua.index')}}"><i class="fa fa-circle-o"></i>Tabel Event Dua</a></li>
             <li><a href="{{route('participant.index')}}"><i class="fa fa-circle-o"></i>Tabel Participant</a></li>
           </ul>
         </li>

@@ -2,13 +2,7 @@
 @section('title','Input Data Event')
 
 @section('KreasiEvent.content.Admin')
-
-<style>
-    h2{
-        text-align: center;
-    }
-</style>
-    <div class="container mt-3" id="create-event">
+    <div class="container ctn-create" id="create-event">
         <h2 id="h2-create">Input Event</h2>
         <h2 id="h2-create">Kreasi Creator Event</h2>
         <hr>

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\KreasiEvent\Admin;
+namespace App\Http\Controllers\KreasiEvent\Admin\Event;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\Repository\EventRepository;
+use App\Http\Controllers\KreasiEvent\Admin\Event\EventRepository;
 use App\Event;
 
 class EventController extends Controller

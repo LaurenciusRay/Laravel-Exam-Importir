@@ -1,0 +1,60 @@
+/* Login */
+#ctn-login{
+    background-color: #002244;
+    height: 650px;
+}
+#p-login1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+#p-login2{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 60px;
+}
+#img-loginadmin{
+    border-radius: 200px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+#form-login{
+    margin-top: 40px;
+}
+#p-login3{
+    color: white;
+    font-size: 20px;
+}
+#p-login4{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Register */
+#ctn-formregis{
+    background-color: #002244;
+    height: 650px;
+}
+#p-regis1{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 60px;
+}
+#p-regis2{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+#forgot-password{
+    color: white;
+    text-decoration: none;
+}
+#form-regis{
+    margin-top: 40px;
+}
