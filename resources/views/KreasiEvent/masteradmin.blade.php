@@ -34,6 +34,7 @@
     {{-- data table --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -89,6 +90,11 @@
     <!-- AdminLTE for demo purposes -->
     <script src="{{asset('assets/dist/js/demo.js')}}"></script>
     {{-- Data Table --}}
+    <script src="{{asset('assets/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('assets/js/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('assets/js/dataTables.buttons.min.js')}}"></script>
+    <script src="{{asset('assets/js/buttons.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('assets/js/datatables-init.js')}}"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
     <script>
       $(document).ready( function () {

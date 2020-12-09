@@ -66,6 +66,7 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
                         <div class="form-group row" id="form-biodatapeserta6">
                             <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="event_id">Event 1</label>
                             <div class="col-lg-8 col-md-8 col-sm-8">
@@ -86,7 +87,8 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group row" id="form-biodatapeserta6">
+                        <br>
+                        <div class="form-group row" id="form-biodatapeserta7">
                             <label class="col-lg-4 col-md-4 col-sm-4 col-form-label" for="event_dua_id">Event 2</label>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <select name="event_dua_id" {{ $listpersons >=2 ? 'disabled' : '' }} id="event_dua_id" class="custom-select">

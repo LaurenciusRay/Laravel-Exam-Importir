@@ -42,6 +42,5 @@
     <script>
       AOS.init(2500);
     </script>
-
   </body>
 </html>

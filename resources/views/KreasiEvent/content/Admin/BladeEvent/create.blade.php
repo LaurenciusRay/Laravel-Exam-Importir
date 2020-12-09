@@ -22,7 +22,7 @@
             </div>
             <div class="form-group{{ $errors->has('event_date') ? ' has-error' : '' }}">
                 <label for="event_date">Tanggal Event</label>
-                <input type="text" class="form-control" id="event_date" name="event_date">
+                <input type="date" class="form-control" id="event_date" name="event_date">
             </div>
             <div class="form-group{{ $errors->has('event_description') ? ' has-error' : '' }}">
                 <label for="event_description">Deskripsi Event</label>

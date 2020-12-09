@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers\KreasiEvent\Admin\Participant;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Event;
-use App\Event_dua;
 use App\ParticipantUsers;
 use App\Http\Controllers\KreasiEvent\Admin\Participant\ParticipantUsersRepository;
 

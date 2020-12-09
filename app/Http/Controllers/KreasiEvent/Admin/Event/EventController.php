@@ -45,7 +45,7 @@ class EventController extends Controller
 
     public function destroy(Event $event)
     {
-        $this->repo->destroyEvent($event);
+        $this->event->destroyEvent($event);
         return redirect()->route('event.index')->with(['sukses' => 'Data Berhasil Di Hapus']);
     }
 }

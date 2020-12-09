@@ -9,11 +9,11 @@ use App\Event_dua;
 
 class EventDuaController extends Controller
 {
-    protected $event_dua;
+    protected $eventdua;
 
     public function __construct()
     {
-        $this->event = new EventDuaRepository();
+        $this->eventdua = new EventDuaRepository();
     }
     public function index(){
         $data_events = Event_dua::all();
@@ -27,25 +27,25 @@ class EventDuaController extends Controller
 
     public function store(Request $request)
     {
-        $this->event->storeEventDua($request);
+        $this->eventdua->storeEventDua($request);
         return redirect()->route('eventdua.index')->with(['sukses' => 'Data Berhasil Di Input']);
     }
 
-    public function edit(Event_dua $event_dua)
+    public function edit(Event_dua $eventdua)
     {
-        $event_dua->find($event_dua->id)->all();
-        return view('KreasiEvent.content.Admin.BladeEvent.edit',compact('event_dua'));
+        $eventdua->find($eventdua->id)->all();
+        return view('KreasiEvent.content.Admin.BladeEventDua.edit',compact('eventdua'));
     }
 
-    public function update(Request $request, Event_dua $event_dua)
+    public function update(Request $request, Event_dua $eventdua)
     {
-        $this->event_dua->updateEvent($request,$event_dua);
+        $this->eventdua->updateEventDua($request, $eventdua);
         return redirect()->route('eventdua.index')->with(['sukses' => 'Data Berhasil Di Edit']);
     }
 
-    public function destroy(Event_dua $event_dua)
+    public function destroy(Event_dua $eventdua)
     {
-        $this->repo->destroyEvent($event_dua);
+        $this->eventdua->destroyEventDua($eventdua);
         return redirect()->route('eventdua.index')->with(['sukses' => 'Data Berhasil Di Hapus']);
     }
 }

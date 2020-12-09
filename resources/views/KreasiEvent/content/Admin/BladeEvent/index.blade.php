@@ -20,7 +20,7 @@
                             <p>{{ Session::get('sukses') }}</p>
                         </div>
                 @endif
-                <table class="table table-striped" id="table_id">
+                <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                     <thead class="thead-dark">
                         <tr>
                           <th>No.</th>

@@ -31,7 +31,7 @@ class EventDuaRepository
     }
 
     // Update
-    public function updateEventDua(Request $request, Event_dua $event_dua)
+    public function updateEventDua(Request $request, Event_dua $eventdua)
     {
         Validator::make($request->all(),
         [
@@ -42,7 +42,7 @@ class EventDuaRepository
             'event_descriptions' => 'required',
         ])->validate();
 
-        $event_dua->update([
+        $eventdua->update([
             'event_names' => $request->event_names,
             'event_categorys' => $request->event_categorys,
             'event_locations' => $request->event_locations,
@@ -52,8 +52,8 @@ class EventDuaRepository
     }
 
     // Delete
-    public function destroyEventDua(Event_dua $event_dua)
+    public function destroyEventDua(Event_dua $eventdua)
     {
-        $event_dua->delete();
+        $eventdua->delete();
     }
 }
