@@ -13,3 +13,9 @@
 
 Route::get('/', 'ParticipantUserController@create');
 Route::post('/', 'ParticipantUserController@store')->name('store');
+Route::get('/admin/participant', 'AdminController@participantList');
+Route::get('/admin/event', 'AdminController@event');
+Route::get('/admin/event-detail/{event}', 'AdminController@eventDetail');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -14,14 +14,11 @@ class CreateParticipantEventsTable extends Migration
     public function up()
     {
         Schema::create('participant_events', function (Blueprint $table) {
-            $table->increments('id');
-            // $table->integer('participant_users_id')->unsigned();
-            // $table->integer('events_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->integer('events_id');
+            $table->integer('participant_users_id');
             $table->timestamps();
             $table->softDeletes();
-
-            // $table->foreign('events_id')->references('id')->on('events')->onDelete('cascade')->onUpdate('cascade');
-            // $table->foreign('participant_users_id')->references('id')->on('participant_users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

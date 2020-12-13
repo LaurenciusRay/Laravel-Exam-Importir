@@ -24,7 +24,6 @@ class ParticipantUserController extends Controller
             'email' => 'required|unique:participant_users,email',
             'phone_number' => 'required|numeric',
             'profesion' => 'nullable',
-            'events_id' => 'required',
         ]);
         // $participant = ParticipantUser::create($validateData);
         $participant->full_name = $request->full_name;
@@ -32,8 +31,8 @@ class ParticipantUserController extends Controller
         $participant->email = $request->email;
         $participant->phone_number = $request->phone_number;
         $participant->profesion = $request->profesion;
-        $participant->events_id = $request->events_id;
         $participant->save();
+        $participant->event()->attach($request->event);
         // $request->session()->flash('pesan',"Data {$validateData['nama']} berhasil disimpan");
         return redirect('/')->with('pesan', "Thank You. Your Data Have Been Submitted");
         

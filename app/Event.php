@@ -8,8 +8,8 @@ class Event extends Model
 {
     protected $guarded = [];
 
-    public function event(){
-        return $this->hasMany(Event::class, 'events_id', 'id');
+    public function participant(){
+        return $this->belongsToMany(ParticipantUser::class,'participant_events','participant_users_id','events_id');
     }
 
     

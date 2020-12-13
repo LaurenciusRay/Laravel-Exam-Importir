@@ -19,8 +19,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/css/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="/adminlte/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="/adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+    <link href="{{asset('public/plugins/select2/css/select2.min.css')}}" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
@@ -99,23 +106,15 @@
                         <div class="form-row">
                             <div class="name">Event</div>
                             <div class="value">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="events_id" id="event_name" class="form-control">
-                                            @foreach ($event as $item)
-                                                <option value="{{  $item->id  }}" {{ old('events_id') == "$item->event_name" ? 'selected' : '' }}>
-                                                    {{  $item->event_name  }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
+                                <select class="form-control select2" multiple="multiple" data-placeholder="Choose Events" name="event[]" style="width: 100%;">
+                                    @foreach ($event as $item)
+                                        <option value="{{$item->id}}">{{$item->event_name}}</option>
+                                    @endforeach
+                                    
+                                  </select>
                             </div>
                         </div>
-                        <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
-                        </div>
+                        <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
                     </form>
                 </div>
             </div>
@@ -125,7 +124,7 @@
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
+    <script src="public/js/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
     <script src="vendor/datepicker/daterangepicker.js"></script>
 
@@ -133,6 +132,34 @@
     <script src="js/global.js"></script>
     <!-- Bootstrap 4 -->
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="public/plugins/select2/js/select2.min.js"></script>
+
+    <script src="/adminlte/plugins/select2/js/select2.full.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    @yield('js')
+    <script>
+            $(".data").select2({
+                placeholder: "Pilih Hobi Anda"
+            });
+    </script>
+    <script>
+        $(function () {
+          //Initialize Select2 Elements
+          $('.select2').select2()
+      
+          //Initialize Select2 Elements
+          $('.select2bs4').select2({
+            theme: 'bootstrap4'
+          })
+      
+          
+      
+          
+      
+        })
+      </script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
